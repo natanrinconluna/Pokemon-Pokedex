@@ -3,7 +3,7 @@
   }
 
 body {
-    background: linear-gradient(146deg, #66eac4, #464846);
+    /* background: linear-gradient(146deg, #66eac4, #f6f9f6);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 5s ease infinite;
@@ -25,4 +25,161 @@ body {
     0%{background-position:0% 77%}
     50%{background-position:100% 24%}
     100%{background-position:0% 77%}
+}
+
+@keyframes shadowanimation {
+    from {box-shadow: 0px;}
+    to {box-shadow: 0px 2px 4px 1px rgb(75, 75, 75);}
+}
+@keyframes inputextention {
+   from {width: 9%;}
+to {width: 25%;} */
+}
+
+#main{
+   display:block;
+   justify-content: center;
+   align-items: center;
+}
+#header{
+   text-align: center;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-family: 'Montserrat', sans-serif;
+   color: bisque;
+}
+#results{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#navDemo{
+    display: flex;    
+    justify-content: space-evenly;
+}
+
+.headButton{
+    margin-top: 1%;
+    border-radius: 14px;
+    border-width: 10px;
+    color:rgb(104, 32, 227);
+    width: 15%;
+    font-weight: bold;
+}
+
+.headButton:hover{
+    animation-name: shadowanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#submit{
+    border-radius: 100000px;
+    border-width: 10px;
+    color:rgb(104, 32, 227);
+    font-weight: bold;
+}
+#submit:hover{
+    animation-name: shadowanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#input:focus{
+    outline: none !important;
+    border: 1px solid white;
+    box-shadow: 0 0 10px #438fe1;
+    animation-name: inputextention;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+#input{
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px #719ECE;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+#input.text{
+font-weight: bold;
+}
+
+#user-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.card-image{
+    border-radius: 100px;
+  }
+
+#PokeType{
+margin-top: 1%;
+margin-left: 35%;
+margin-bottom: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+row-gap: 25px;
+
+
+}
+#Pokemon-Type0{  
+    width: 10%;
+    text-align: center;
+    /* margin-bottom: 1%; */
+    margin-top: 5%;
+    border-radius: 100px;
+    font-size: large;
+    background-color:cornsilk;
+    color: black;
+    font-weight: bold;
+    text-shadow: 3px 3px #a1a3a8;
+    border: 5px solid rgb(108, 193, 117);
+    
+}
+#Pokemon-Type1{  
+    width: 10%;
+    text-align: center;
+    /* margin-bottom: 1%;
+    margin-top: 5%; */
+    border-radius: 100px;
+    font-size: large;
+    background-color:rgb(0, 34, 255);
+    color: cornsilk;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 3px 3px #1e1f21;
+    border: 5px solid rgb(25, 148, 201);
+
+}
+.showlink{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Pokemon-Name{
+    margin-top: 25%;
+    background-color: rgb(232, 213, 213);
+    border-radius: 100px;
+    font-size: large;
+    width: 65%;
+    font-weight: bold;
+    text-shadow: 3px 3px #98a7b7;
+    border: 5px solid rgb(239, 149, 119);
+}
+#Pokemon-Number{
+    margin-top: 25%;
+    border-radius: 100px;
+    font-size: large;
+    background-color: chartreuse;
+    width: 35%;
+    font-weight: bold;
+    text-shadow: 3px 3px #9fa5ab;
+    border: 5px solid rgb(108, 193, 117);
+}
+#pokeid{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
 }
